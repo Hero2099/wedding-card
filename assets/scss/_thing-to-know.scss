@@ -1,0 +1,76 @@
+app-things-to-know {
+    @media (max-width: 640px) {
+        .header-couple-names {
+            font-size: calc(66px * 0.75);
+        }
+
+        .header-wedding-date-location {
+            font-size: calc(20px * 0.75);
+        }
+
+        .section-info {
+            font-size: calc(14px);
+        }
+    }
+
+    @media (min-width: 640px) {
+        .header-couple-names {
+            font-size: 66px;
+        }
+
+        .header-wedding-date-location {
+            font-size: 20px;
+        }
+
+        .section-info {
+            font-size: 16px;
+        }
+    }
+
+    .thingsToKnowImg {
+        max-height: 260px;
+        width: 100%;
+        border-top: 3px solid $secondary;
+        border-bottom: 3px solid $secondary;
+
+        img {
+            width: 100%;
+            height: 260px;
+        }
+    }
+
+    .things-to-know-header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .header-couple-names {
+        font-weight: 400;
+        font-family: 'Parisienne';
+        color: $tertiary;
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .header-wedding-date-location {
+        font-weight: 500;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: $tertiary;
+    }
+
+    .things-to-know-body {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .section-info {
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        color: $tertiary;
+        line-height: 1.5;
+    }
+}

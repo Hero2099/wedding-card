@@ -1,0 +1,148 @@
+@import './color/colors';
+
+app-root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    @media (max-width: 640px) {
+        .header-text {
+            font-size: calc(28px * 0.75);
+        }
+
+        .link-text {
+            font-size: calc(16px * 0.875);
+        }
+
+        .footer-initials {
+            font-size: calc(66px * 0.75);
+        }
+
+        .footer-date {
+            font-size: calc(20px * 0.75);
+        }
+    }
+
+    @media (min-width: 640px) {
+        .header-text {
+            font-size: 28px;
+        }
+
+        .link-text {
+            font-size: 16px;
+        }
+
+        .footer-initials {
+            font-size: 66px;
+        }
+
+        .footer-date {
+            font-size: 20px;
+        }
+    }
+
+    .header {
+        display: flex;
+        height: 56px;
+    }
+    
+    .navBtn {
+        position: absolute;
+        color: $tertiary;
+        width: 56px !important;
+        height: 56px !important;
+        line-height: 56px !important;
+
+        .mat-icon {
+            width: 40px !important;
+            height: 40px !important;
+            line-height: 40px !important;
+        }
+        .material-icons {
+            font-size: 40px !important;
+        }
+    }
+    
+    .header-text {
+        text-align: center;
+        flex-grow: 1;
+        margin-top: auto;
+        margin-bottom: auto;
+        letter-spacing: 3px;
+    }
+
+    .nav-container {
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    
+    .scroller {
+        flex: 1;
+        overflow-y: auto;
+    }
+
+    .nav-link {
+        text-align: center;
+        width: 100%;
+        padding: 8px;
+
+        a {
+            display: block;
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            color: inherit;
+            text-decoration: inherit;
+        }
+    }
+
+    .link-text {
+        color: $tertiary;       
+        display: block;
+        letter-spacing: 2px;
+        line-height: 1;
+        margin: 0 auto;
+        padding: 8px 8px 6px;
+        text-decoration: none;
+        transition: all 0.25s;
+        width: fit-content;
+        font-weight: 500;
+    }
+
+    .active {
+        border-bottom: 2px solid $tertiary;
+    }
+
+    .body-container {
+        overflow-y: auto;
+        height: 100%;
+    }
+
+    .footer-container {
+        letter-spacing: 3.4px;
+        line-height: 1;
+        margin: 52px auto;
+        text-align: center;
+        width: fit-content;
+    }
+
+    .footer-initials {
+        font-family: 'Parisienne';
+        color: $tertiary;
+        font-weight: 400;
+    }
+
+    .footer-date {
+        padding: 20px 18px 0;
+        font-family: Josefin Sans;
+        color: $tertiary;
+        font-weight: 500;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        border-top: 1px solid $tertiary;
+    }
+}
