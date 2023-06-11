@@ -1,0 +1,41 @@
+<div class="home-container">
+    <div class="homeImg">
+        <img src="assets/images/home.jpg" alt="">
+    </div>
+    <div class="home-header">
+        <h1 class="header-couple-names">Rolandi & Dylan</h1>
+        <div class="header-wedding-date-location">December 16, 2023</div>
+    </div>
+    <div class="button-container">
+        <button type="button" class="rsvpBtn" (click)="navigate('/rsvp')">RSVP</button>
+    </div>
+    <div class="info-container">
+        <div class="infoMain">
+            <div class="infoLine">Alberts Wedding</div>
+            <div class="infoLine">Decemeber 16, 2023</div>
+            <div class="infoLine">14:30 PM-00.00 AM</div>
+        </div>
+        <div class="infoSub">
+            <div class="infoLine">Outeniquabosch lodge and venue</div>
+            <div class="infoLine">DK 20, Blesbok, Hartenbos</div>
+            <div class="infoLine gpsLink" (click)="openGpsLink()">View on Google Maps</div>
+        </div>
+        <div class="infoSub"></div>
+        <div class="infoSub">
+            <div class="infoLine">Guests to arrive at 14:30pm. The ceremony will start at 15:00pm</div>
+        </div>
+    </div>
+    <div class="nav-pad">
+        <ul class="nav-container">
+            <li class="nav-link">
+                <span class="link-text active">Home</span>
+            </li>
+            <li class="nav-link" (click)="navigate('/things-to-know')">
+                <span class="link-text">Things to know</span>
+            </li>
+            <li class="nav-link" (click)="navigate('/rsvp')">
+                <span class="link-text">RSVP</span>
+            </li>
+        </ul>
+    </div>
+</div>

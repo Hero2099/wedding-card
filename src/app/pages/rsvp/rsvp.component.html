@@ -1,0 +1,19 @@
+<div class="rsvpImg">
+    <img src="assets/images/rsvp.jpg" alt="">
+</div>
+<div class="rsvp-container">
+    <h2 class="title">ALBERTS WEDDING</h2>
+    <div class="infoLine">If you are invited, search for your name or partner's name below to download your invitation.</div>
+    <div class="nameInputContainer">
+        <mat-form-field class="name-input" appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput [(ngModel)]="name">       
+        </mat-form-field>
+        <mat-error *ngIf="notFound">No invitation was found for that name. You can try your partner's name instead or check with the bride/groom if you believe you are invited.</mat-error>
+    </div>
+    <button mat-button class="submitBtn" type="button" (click)="rsvp()" [disabled]="!name">FIND YOU INVITATION</button>
+    <div class="infoLine">
+        <div class="nbNote">NB: Please RSVP before the 15th August 2023!</div>
+        <div class="nbInfo">We are paying per head. If you do not RSVP before then, we will have to assume you will not be joining us.</div>
+    </div>
+</div>

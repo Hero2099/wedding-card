@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/scss/color/colors';
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    font-family: 'Josefin Sans';
+    background-color: $primary;
+}
+
+.text {
+    color: $tertiary;
+}
+
+@import './assets/scss/app';
+@import './assets/scss/home';
+@import './assets/scss/thing-to-know';
+@import './assets/scss/rsvp';
