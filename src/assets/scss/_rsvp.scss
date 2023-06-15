@@ -23,8 +23,10 @@ app-rsvp {
     .rsvpImg {
         max-height: 260px;
         width: 100%;
-        border-top: 3px solid $secondary;
-        border-bottom: 3px solid $secondary;
+        border: 3px solid $secondary;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
 
         img {
             width: 100%;
@@ -47,13 +49,6 @@ app-rsvp {
         color: $tertiary;
         font-size: 16px;
         font-weight: 500;
-        width: 440px;
-    }
-
-    .nameInputContainer {
-        margin-left: auto;
-        margin-right: auto;
-        width: 440px;
     }
     
     .name-input {
@@ -100,9 +95,6 @@ app-rsvp {
     }
 
     .submitBtn {
-        margin-left: auto;
-        margin-right: auto;
-        width: 440px;
         height: 48px;
         color: $primary;
         background-color: $tertiary;

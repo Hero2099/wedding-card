@@ -30,8 +30,10 @@ app-things-to-know {
     .thingsToKnowImg {
         max-height: 260px;
         width: 100%;
-        border-top: 3px solid $secondary;
-        border-bottom: 3px solid $secondary;
+        border: 3px solid $secondary;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
 
         img {
             width: 100%;
