@@ -4,14 +4,16 @@
 <div class="rsvp-container">
     <h2 class="title">ALBERTS WEDDING</h2>
     <div class="infoLine">If you are invited, search for your name or partner's name below to download your invitation.</div>
-    <div class="nameInputContainer">
+    <div class="text-center">
         <mat-form-field class="name-input" appearance="outline">
             <mat-label>Name</mat-label>
             <input matInput [(ngModel)]="name">       
         </mat-form-field>
         <mat-error *ngIf="notFound">No invitation was found for that name. You can try your partner's name instead or check with the bride/groom if you believe you are invited.</mat-error>
     </div>
-    <button mat-button class="submitBtn" type="button" (click)="rsvp()" [disabled]="!name">FIND YOUR INVITATION</button>
+    <div class="text-center">
+        <button mat-button class="submitBtn" type="button" (click)="rsvp()" [disabled]="!name">FIND YOUR INVITATION</button>
+    </div>    
     <div class="infoLine">
         <div class="nbNote">NB: Please RSVP before the 15th August 2023!</div>
         <div class="nbNote">Dylan - 0787325819</div>

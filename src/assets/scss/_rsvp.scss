@@ -22,7 +22,6 @@ app-rsvp {
 
     .rsvpImg {
         max-height: 260px;
-        width: 100%;
         border: 3px solid $secondary;
         max-width: 500px;
         margin-left: auto;
@@ -51,12 +50,15 @@ app-rsvp {
         font-weight: 500;
     }
     
+    .text-center {
+        text-align: center;
+    }
+
     .name-input {
-        margin-left: auto;
-        margin-right: auto;
         height: 48px;
         width: 100%;
         margin-bottom: 0.5rem;
+        max-width: 675px;
 
         .mat-form-field-infix {
             margin-top: auto;
@@ -101,6 +103,8 @@ app-rsvp {
         font-size: 16px;
         font-family: 'Josefin Sans';
         margin-bottom: auto;
+        max-width: 675px;
+        width: 100%;
     }
 
     .nbNote {
