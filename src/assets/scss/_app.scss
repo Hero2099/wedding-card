@@ -83,7 +83,8 @@ app-root {
     .nav-link {
         text-align: center;
         width: 100%;
-        padding: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
 
         a {
             display: block;
@@ -112,7 +113,7 @@ app-root {
         border-bottom: 2px solid $tertiary;
     }
 
-    .body-container {
+    .scroller {
         overflow-y: auto;
         height: 100%;
     }
