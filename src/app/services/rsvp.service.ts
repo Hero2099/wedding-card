@@ -87,6 +87,8 @@ export class RSVPService {
         case 'johan':
         case 'lizelle':
           return 'assets/files/30.png'
+        case 'charldon':
+          return 'assets/files/31.png'
       }
 
       return '';
